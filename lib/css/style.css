@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
 }
-.overflow-auto {
+.recipe-items {
   overflow-y: scroll;
-  height: calc(50vh - 56px);
+  height: calc(50vh - 80px);
 }
