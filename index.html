@@ -52,7 +52,7 @@
         >
           <div id="accordion">
             <!-- ========================================================= -->
-            <!-- Seasonal filter -->
+            <!-- address filter-->
             <!-- ========================================================= -->
             <div class="card">
               <div class="card-header" id="headingOne">
@@ -64,7 +64,7 @@
                     aria-expanded="true"
                     aria-controls="collapseOne"
                   >
-                    Filter seasonal products
+                    Select location
                   </button>
                 </h5>
               </div>
@@ -73,6 +73,50 @@
                 id="collapseOne"
                 class="collapse show"
                 aria-labelledby="headingOne"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  <small for="esri-search" class="text-muted font-italic"
+                    >Search location</small
+                  >
+                  <div class="select-location-card"></div>
+                  <div class="form-group mt-2">
+                    <small class="text-muted font-italic" for="buffer-dist"
+                      >Buffer distance (km)</small
+                    >
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="buffer-dist"
+                      placeholder="buffer distance..."
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ========================================================= -->
+            <!-- Seasonal filter -->
+            <!-- ========================================================= -->
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="true"
+                    aria-controls="collapseTwo"
+                  >
+                    Filter seasonal products
+                  </button>
+                </h5>
+              </div>
+
+              <div
+                id="collapseTwo"
+                class="collapse show"
+                aria-labelledby="headingTwo"
                 data-parent="#accordion"
               >
                 <div class="card-body">
