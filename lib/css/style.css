@@ -13,3 +13,8 @@ body {
   overflow-y: scroll;
   height: calc(50vh - 80px);
 }
+
+.overflow-scroll {
+  overflow-y: scroll;
+  height: calc(100vh - 80px);
+}
