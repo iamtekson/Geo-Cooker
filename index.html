@@ -47,19 +47,105 @@
     <!-- Sidebar -->
     <div class="container-fluid sidebar">
       <div class="row">
-        <!-- section for time filter  -->
-        <!-- <div class="col-md-2 d-none d-md-block bg-light sidebar mt-2">
-          <div class="position-sticky time-filter">
-            <form name="form1">
-              <label for="adm">Date of Admission:</label>
-              <input type="month" name="doa" />
-            </form>
-          </div>
-        </div> -->
-
         <nav class="col-md-2 d-none d-md-block bg-light sidebar mt-2">
-          <!-- Product items will dynamically added to the following div -->
-          <div class="position-sticky product-items"></div>
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Filter seasonal products
+                  </button>
+                </h5>
+              </div>
+
+              <div
+                id="collapseOne"
+                class="collapse show"
+                aria-labelledby="headingOne"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  <!-- add dropdown to select the season -->
+                  <select class="custom-select season-select">
+                    <option value="">Choose one season</option>
+                    <option value="spring">Spring</option>
+                    <option value="summer">Summer</option>
+                    <option value="fall">Fall</option>
+                    <option value="winter">Winter</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Collapsible Group Item #2
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseTwo"
+                class="collapse"
+                aria-labelledby="headingTwo"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life
+                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                  non cupidatat skateboard dolor brunch. Food truck quinoa
+                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                  aliqua put a bird on it squid single-origin coffee nulla
+                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                  beer labore wes anderson cred nesciunt sapiente ea proident.
+                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                  beer farm-to-table, raw denim aesthetic synth nesciunt you
+                  probably haven't heard of them accusamus labore sustainable
+                  VHS.
+                </div>
+              </div>
+            </div> -->
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    data-toggle="collapse"
+                    data-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Select products
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseThree"
+                class="collapse show"
+                aria-labelledby="headingThree"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  <!-- ========================================================= -->
+                  <!-- Product items will dynamically added to the following div -->
+                  <!-- ========================================================= -->
+                  <div class="position-sticky product-items"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </nav>
 
         <main class="col-md-10 ml-sm-auto">
@@ -83,6 +169,7 @@
     <script src="https://js.arcgis.com/4.27/"></script>
 
     <!-- Your custom JavaScript -->
+    <script src="./lib/js/config.js"></script>
     <script src="./lib/js/data.js"></script>
     <script src="./lib/js/wizards.js"></script>
     <script src="./lib/js/functions.js"></script>
