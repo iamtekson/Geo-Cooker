@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#mapViewDiv {
+  width: 100%;
+  height: 50vh;
+  margin: 0;
+  padding: 0;
+}
+.overflow-auto {
+  overflow-y: scroll;
+  height: calc(50vh - 56px);
+}

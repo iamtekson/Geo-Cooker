@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Receipe Builder</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- ArcGIS JavaScript SDK CSS -->
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.27/esri/themes/light/main.css"
+    />
+
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="./lib/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">Your Website</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <!-- Add your navbar items here -->
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <!-- Add more navbar items as needed -->
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="container-fluid sidebar">
+      <div class="row">
+        <!-- section for time filter  -->
+        <!-- <div class="col-md-2 d-none d-md-block bg-light sidebar mt-2">
+          <div class="position-sticky time-filter">
+            <form name="form1">
+              <label for="adm">Date of Admission:</label>
+              <input type="month" name="doa" />
+            </form>
+          </div>
+        </div> -->
+
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar mt-2">
+          <!-- Product items will dynamically added to the following div -->
+          <div class="position-sticky product-items"></div>
+        </nav>
+
+        <main class="col-md-10 ml-sm-auto">
+          <!-- Map Container -->
+          <div id="mapViewDiv"></div>
+
+          <!-- Food Cards -->
+          <div class="row mt-4 overflow-auto recipe-items"></div>
+        </main>
+      </div>
+    </div>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- ArcGIS JavaScript SDK -->
+    <script src="https://js.arcgis.com/4.27/"></script>
+
+    <!-- Your custom JavaScript -->
+    <script src="./lib/js/data.js"></script>
+    <script src="./lib/js/wizards.js"></script>
+    <script src="./lib/js/functions.js"></script>
+    <script src="./lib/js/webmap.js"></script>
+    <script src="./lib/js/jsEvents.js"></script>
+  </body>
+</html>
