@@ -18,3 +18,22 @@ body {
   overflow-y: scroll;
   height: calc(100vh - 80px);
 }
+
+/* esri-mapping related css  */
+#viewDiv.view-legend {
+  width: calc(100% - 250px);
+}
+
+#legendDiv {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: 0px;
+
+  background-color: #f5f5f5;
+}
+
+#legendDiv.legend-expanded {
+  width: 250px;
+}
