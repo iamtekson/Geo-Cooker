@@ -22,6 +22,10 @@ body {
 .card-btn {
   color: #fff;
 }
+.logo-nav {
+  width: 30px;
+  height: auto;
+}
 
 .card-header {
   background-color: #fdb812;
