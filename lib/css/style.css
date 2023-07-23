@@ -15,6 +15,33 @@ body {
   height: calc(50vh - 80px);
 }
 
+.nav-color {
+  background-color: #fdb812 !important;
+}
+
+.card-btn {
+  color: #fff;
+}
+.logo-nav {
+  width: 30px;
+  height: auto;
+}
+
+.card-header {
+  background-color: #fdb812;
+}
+
+.btn-success {
+  background-color: #fdb812 !important;
+  border-color: #fdb812 !important;
+}
+
+.product-detail-btn {
+  background-color: #fdb812 !important;
+  color: #fff;
+  border-color: #fdb812 !important;
+}
+
 .overflow-scroll {
   overflow-y: scroll;
   height: calc(100vh - 80px);
