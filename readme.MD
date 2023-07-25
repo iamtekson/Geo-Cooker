@@ -2,6 +2,8 @@
 
 GeoCooker is an interactive app that allows users to find recipes using seasonal produce from local small-scale farms.
 
+**DEMO :** https://iamtekson.github.io/Geo-Cooker/index.html
+
 ## Abstract
 
 In today's world, the consumption of supermarket-sourced and processed foods has become a widespread habit. Convenience often takes precedence over nutrition, leading to a decline in the overall health and well-being of individuals. Additionally, the carbon impact of transporting food across long distances, commonly referred to as "food miles," has emerged as a significant concern for environmental sustainability. This ultimately leads to a disconnect between people and the origins of their food. It is evident that a transformative solution is needed to address these challenges and promote healthier, eco-friendly eating habits.
